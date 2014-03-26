@@ -1,0 +1,4 @@
+destination = "src/test/resources/data_test/testcase15/output/test15_3.output"
+File.open(destination,'w') do |f|
+ 	f.print "test15_2.rb added successfully"
+end

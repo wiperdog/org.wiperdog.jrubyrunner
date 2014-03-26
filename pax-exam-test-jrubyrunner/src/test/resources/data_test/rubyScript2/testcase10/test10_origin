@@ -1,0 +1,15 @@
+require 'os'
+destination = "src/test/resources/data_test/testcase10/output/test10.output"
+os = ""
+if(OS.windows?)
+    os = "windows"
+elsif
+  if(OS.linux?)
+    os = "linux"
+  else
+    os = "other" 
+  end  
+end
+File.open(destination,'w') do |f|
+ 	f.print "OS is #{os}"
+end

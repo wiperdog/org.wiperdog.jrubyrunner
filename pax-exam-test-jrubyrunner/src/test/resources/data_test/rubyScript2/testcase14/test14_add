@@ -1,0 +1,4 @@
+destination = 'src/test/resources/data_test/testcase14/output/test14_3.output'
+File.open(destination,'w') do |f|
+f.print 'New file added'
+end

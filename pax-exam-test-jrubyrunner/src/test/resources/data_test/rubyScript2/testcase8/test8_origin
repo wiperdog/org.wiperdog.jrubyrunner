@@ -1,0 +1,12 @@
+#require 'os' gem to gurrante that script could load gem from input libs paths
+require 'os'
+text = ""
+destination = "src/test/resources/data_test/testcase8/output/test8.output"
+#list_str is data from input 
+list_str.each do |str|
+	text += str
+	text += " "
+end
+File.open(destination,'w') do |f|
+ 	f.print text.strip
+end

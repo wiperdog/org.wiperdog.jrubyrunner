@@ -1,0 +1,10 @@
+text = ""
+destination = "src/test/resources/data_test/testcase9/output/test9.output"
+#list_str is data from input 
+list_str.each do |str|
+	text += str
+	text += " "
+end
+File.open(destination,'w') do |f|
+ 	f.print text.strip
+end
